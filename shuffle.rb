@@ -46,5 +46,5 @@ def student_fours(array)
 end
 
 # call whatever you want here
-student_fours(phx_koders)
+student_trios(phx_koders)
 
