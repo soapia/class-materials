@@ -1,0 +1,28 @@
+import UIKit
+
+var classRoster = ["Kaylen", "Crystal", "Alyssa", "Ilana", "Jenny", "Gianna", "Agatha", "Veronica", "Haley", "Amelie", "Vivian", "Allison", "April", "Dominique", "Tasha"]
+
+// type your array of scholars above!
+
+classRoster.shuffle()
+
+func pairs() {
+    var statement: String
+    if (classRoster.count % 2 == 0) {
+        while (classRoster.count > 0) {
+            statement = "\(classRoster.remove(at: 0)) and \(classRoster.remove(at: 0))"
+            print(statement)
+        }
+    } else {
+        while (classRoster.count > 3) {
+            statement = "\(classRoster.remove(at: 0)) and \(classRoster.remove(at: 0))"
+            print(statement)
+        }
+        if (classRoster.count == 3) {
+            statement = "\(classRoster.remove(at: 0)), \(classRoster.remove(at: 0)), and \(classRoster.remove(at: 0))"
+            print(statement)
+        }
+    }
+}
+
+pairs()
