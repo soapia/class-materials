@@ -30,7 +30,7 @@ myAge += 10
 myAge /= 10
 myAge *= 10
 myAge %= 10 // i mean i don't see how this last one coud be useful but whatevs
-myAge **= 10 
+myAge **= 10
 
 // if u don't define ur variable first though, it'll return NaN, or not a number, kinda like undefined
 Number.isInteger(8) // will return t or f based on its truth
@@ -55,10 +55,10 @@ return "hey what's up hello"
 
 // let's format some if statements:
 if (myAge == 2) {
-    console.log('omg i`m two') 
+    console.log('omg i`m two')
     myAge++
 } else if (myAge == 17) {
-console.log('omg i`m 17') 
+console.log('omg i`m 17')
 myAge++
 } else {
     myAge++
@@ -67,7 +67,7 @@ myAge++
 // arrays are kinda the same as ruby......
 const myFriends = ["may","natalie","paige"]
 myFriends.length // will return the length
-myFriends.push("hana") // will add name to the end 
+myFriends.push("hana") // will add name to the end
 myFriends.unshift("hannah") // will add name to the beginning
 myFriends.pop() // will remove the last name
 myFriends.shift() // will remove the first
@@ -90,14 +90,18 @@ let element = document.getElementById('myId')
 element.children[0] // will return the first child element within the id
 element.innerHTML // this will access the actual text,, you can edit this too!!
 
-// event listeners!! 
+// event listeners!!
 const main = document.querySelector('#main')
  main.addEventListener('click', function(event) { // will do this thing when clicked
   alert('I was clicked!') // an alert!
 })
 // other common events are change, 'keydown', 'keyup', 'load', 'mouseover', 'mouseout'
 const input = document.querySelector('input')
- 
+
 input.addEventListener('keydown', function(e) {
   console.log(e.which) // .which tells us which key was clicked
 })
+
+function gratitude() {
+  console.log("")
+}
